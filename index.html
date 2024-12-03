@@ -1,0 +1,71 @@
+<link rel='stylesheet' href='https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css'>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<body>
+    <h4>Choose a Contact</h4>
+    <div class="container">
+        <div class="row">
+            <h5>Search for a Contact</h5>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">First name <input class="form-control" id="first_name_input" /></div>
+                    <div class="col">Last Name <input class="form-control" id="last_name_input" /></div>
+                    <div class="col">Date of birth <input class="form-control" id="date_of_birth_input" type="date" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">Email Address <input class="form-control" id="email_input" /></div>
+                    <div class="col">Phone number <input class="form-control" id="phone_input" /></div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-12">Street Address <input class="form-control" id="address_input" /></div>
+                    <div class="col">City <input class="form-control" id="city_input" /></div>
+                    <div class="col">State <select class="form-select" id="state_input">
+                            <option></option>
+                        </select></div>
+                    <div class="col">Zipcode <input class="form-control" id="zipcode_input" /></div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <button id='search' class="btn btn-primary ">Search</button><br /><br />
+    </div>
+    <div class="container">
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>DOB</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Zip</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <br /><br />
+    <div class="container">
+        <h3>Selected Contact:</h3>
+        <div class="row">Name:<div id="selected_name"></div>
+        </div>
+        <div class="row">Email:<div id="selected_email"></div>
+        </div>
+        <div class="row">Phone:<div id="selected_phone"></div>
+        </div>
+        <div class="row">Address:<div id="selected_address"></div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+<script src="index.js"></script>
