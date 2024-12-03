@@ -5,7 +5,7 @@
 pip install -r requirements.txt
 
 ### To run main program:
-python main.py #\
+python main.py \
 go to http://localhost:8080/ 
 
 ### To run selenium tests:
